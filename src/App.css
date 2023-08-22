@@ -24,4 +24,28 @@ body {
 .main-menu a.active {
   color: #474747;
   font-weight: 600;
+}
+
+.home-content .content-right {
+  position: relative;
+}
+.home-content .rect-orange {
+  width: 415px;
+  height: 595px;
+  background-color: #ff6d5c;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 20;
+}
+.home-content .rect-green {
+  width: 300px;
+  height: 300px;
+  background-color: #cbe3bf;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
 }/*# sourceMappingURL=App.css.map */
