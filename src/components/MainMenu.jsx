@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 class MainMenu extends React.Component {
   render() {
@@ -7,13 +7,13 @@ class MainMenu extends React.Component {
       <div className="main-menu">
         <ul className="d-flex justify-content-between align-items-center w-100 list-unstyled p-5">
           <li>
-            <img src="/TechLab.png"></img>
+            <img className="logo" src="/TechLab.svg"></img>
           </li>
           <div className="d-flex gap-4">
-            <Link to="/">Home</Link>
-            <Link to="/courses">Courses</Link>
-            <Link to="/features">Features</Link>
-            <Link to="/contact">Contact</Link>
+          <NavLink to="/" activeClassName="active">Home</NavLink>
+          <NavLink to="/courses" activeClassName="active">Courses</NavLink>
+          <NavLink to="/features" activeClassName="active">Features</NavLink>
+          <NavLink to="/contact" activeClassName="active">Contact</NavLink>
           </div>
 
           <li>

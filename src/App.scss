@@ -1,14 +1,37 @@
-$white: #FAFAF8;
-$orange: #FF6D5C;
-$green: #CBE3BF;
+$white: #fafaf8;
+$orange: #ff6d5c;
+$green: #cbe3bf;
 $black: #474747;
 $darkgray: #767474;
 
-.main-menu{
-  .btn-signup{
-    border-radius: 15px;
+body {
+  font-family: 'Poppins', sans-serif!important;
+}
+
+.main-menu {
+  //logo could have been 2 spans in an h1 with color classes
+  .logo {
+    filter: drop-shadow(0 6px 1px rgba(0, 0, 0, 0.1));
+  }
+
+  .btn-signup {
+    border-radius: 40px;
     background: white;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 40px;
+    font-weight: 500;
+    box-shadow: 0 8px 6px rgba(102, 102, 102, 0.3);
+  }
+  a {
+    color: $darkgray;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+  }
+  a.active {
+    color: $black;
+    font-weight: 600;
   }
 }
