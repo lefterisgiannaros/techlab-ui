@@ -1,13 +1,13 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import MainMenu from "./components/MainMenu";
-import Home from './components/pages/Home';
-import Courses from './components/pages/Courses';
-import Features from './components/pages/Features';
-import Contact from './components/pages/Contact';
+import Home from './pages/Home';
+import Courses from './pages/Courses';
+import Features from './pages/Features';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
       <div className="App">
         <MainMenu />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/courses" component={Courses} />
-          <Route path="/features" component={Features} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/" element={<Home />} />
+          <Route path="/courses" element={<Courses />} /> {/* Check this route */}
+          <Route path="/features" element={<Features />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
