@@ -1,15 +1,16 @@
 body {
   font-family: "Poppins", sans-serif !important;
+  background-color: #fafaf8 !important;
 }
 
 .btn-curved {
   border-radius: 40px;
-  padding: 10px 40px;
+  padding: 15px 60px;
   font-weight: 500;
 }
 .btn-white {
   background: white;
-  color: black;
+  color: #474747;
   box-shadow: 0 8px 6px rgba(102, 102, 102, 0.3);
 }
 .btn-darkgrey {
@@ -56,7 +57,7 @@ body {
   height: 20px;
   background-color: #474747;
   border-radius: 50%;
-  margin: 0 72px;
+  margin: 15px 72px 0px;
 }
 .home-content .content-left .stats-container .txt-top {
   font-weight: 600;
