@@ -40,7 +40,7 @@ function Home() {
         <div className="rect-orange"></div>
         <div className="rect-green"></div>
 
-        <img className="ornament" src="/Ornament.svg"></img>
+        <img className="ornament" src="/Ornament.svg" alt="ornament"></img>
 
         <div className="white-circle"></div>
         <div className="small-white-circle"></div>
